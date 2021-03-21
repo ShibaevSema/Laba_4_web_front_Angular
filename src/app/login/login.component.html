@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row row-cols-auto">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
+          Enter credentials:
+        </div>
+        <div class="card-body">
+            <label for="user-input" class="form-label">Username:</label>
+            <input id="user-input" type="text" class="form-control" [(ngModel)]="username" required>
+            <br>
+            <label for="pass-input" class="form-label">Password:</label>
+            <input id="pass-input" type="password" class="form-control" [(ngModel)]="password" required>
+        </div>
+        <div class="btn-group" role="group" aria-label="Actions">
+          <button type="button" (click)="login()" class="btn btn-primary">Login</button>
+          <button type="button" (click)="register()" class="btn btn-primary">Registered</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card text-center">
+        <div class="card-header">
+          Ошибки: {{lastError}}
+        </div>
+        <div class="card-body">
+          Бондаренко Данила<br>
+          Семён Шибаев<br>
+          P3210 10108822<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
